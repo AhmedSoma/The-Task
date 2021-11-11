@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    flex-flow: row wrap;
+    display: inline-flex;   
+    justify-content: space-around;
+    background-color: #ccc;
+}
+.side
+{
+    flex-basis: 30%;
+}
+.container
+{
+    flex-flow: column wrap;
+    display: inline-flex;   
+    justify-content: space-between;
+    flex-basis: 66%;
+}
+
+.first
+{
+    min-height: 800px;
+    background-color: #eee;
+}
+.first .i
+{
+    width: 100%;
+    height: 30%;
+}
+.first p
+{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 10px 0px 5px 20px;
+}
+.first span
+{
+    font-weight: bold;
+    font-size: 20px;
+}
+.first .dad
+{
+    width:80%;
+    background-color:gray;
+    margin: 10px;
+    display: inline-block;
+}
+.first .prog
+{
+    width: 80%;
+    padding: 5px;
+    text-align: center;
+    background-color: aqua;
+}
+.socend
+{
+    min-height: 390px;
+    background-color: #eee;
+    padding: 10px;
+}
+.third
+{
+    min-height: 390px;
+    background-color: #eee;   
+    padding: 10px;
+}
+.editp
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding: 10px;
+}
+
+footer
+{
+    background-color: black;
+    margin: 10px 0px 0px;
+    width: 100%;
+    text-align: center;
+}
+footer p
+{
+    color: white;
+    padding: 20px;
+}
+@media screen and (max-width: 700px) {
+    body {   
+        flex-flow: column wrap;
+    }
+  }
